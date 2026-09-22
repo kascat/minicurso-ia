@@ -12,6 +12,7 @@ Acompanhamento das tarefas do projeto. Cada tarefa aponta para o requisito em `R
 | T-06 | Exportação CSV | RF-05 | 6 | concluída |
 | T-07 | Revisão e entrega | — | 7 | concluída |
 | T-08 | Automação com skill | — | 8 | pendente |
+| T-09 | Máscara de telefone no cadastro | RF-02 | 3 | concluída |
 
 ## Critérios de aceite por tarefa
 
@@ -32,3 +33,6 @@ Acompanhamento das tarefas do projeto. Cada tarefa aponta para o requisito em `R
 
 ### T-06 — Exportação CSV
 - [x] Download do CSV com as colunas definidas.
+
+### T-09 — Máscara de telefone no cadastro
+- [x] Campo de telefone formata a entrada como `(11) 99999-9999`.
