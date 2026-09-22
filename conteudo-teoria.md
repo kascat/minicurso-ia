@@ -6,8 +6,6 @@
 
 ## Apresentação
 
-### Quem conduz
-
 **Fabio Dukievicz** — engenheiro de software e desenvolvedor full stack.
 
 - **Atuação:** desenvolvimento de sistemas web
