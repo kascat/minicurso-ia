@@ -5,6 +5,11 @@ O formato segue o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.
 
 ## [Não publicado]
 
+### Adicionado
+
+- Máscara de telefone no campo de cadastro de lead (`(11) 99999-9999`) e
+  utilitário `formatarTelefone` com testes.
+
 ## [0.2.0] - 2026-09-19
 
 ### Adicionado

@@ -2,6 +2,12 @@
 const nome = ref('')
 const email = ref('')
 const telefone = ref('')
+const telefoneMascarado = computed({
+  get: () => telefone.value,
+  set: (valor: string) => {
+    telefone.value = formatarTelefone(valor)
+  }
+})
 const erro = ref('')
 const sucesso = ref('')
 const carregando = ref(false)
@@ -64,7 +70,7 @@ async function onSubmit() {
 
       <div>
         <label class="label" for="telefone">Telefone</label>
-        <input id="telefone" v-model="telefone" class="input" type="text" required>
+        <input id="telefone" v-model="telefoneMascarado" class="input" type="tel" inputmode="tel" placeholder="(11) 99999-9999" maxlength="15" required>
       </div>
 
       <button class="btn-primary w-full" type="submit" :disabled="carregando">
