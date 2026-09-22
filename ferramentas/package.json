@@ -1,0 +1,12 @@
+{
+  "name": "ferramentas-minicurso",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "html": "node gerar-html.mjs",
+    "html:watch": "node gerar-html.mjs --watch"
+  },
+  "dependencies": {
+    "marked": "^15.0.0"
+  }
+}
