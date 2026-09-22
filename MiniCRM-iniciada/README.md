@@ -35,7 +35,7 @@ O container, ao iniciar, executa automaticamente:
 
 - **Login/logout** com sessão em cookie HTTP-only assinado (HMAC-SHA256, 8 horas).
 - **Cadastro de leads** com validação e bloqueio de e-mail duplicado.
-- **Listagem de leads** com busca por nome/e-mail e filtro por status.
+- **Listagem de leads** com busca por nome/e-mail, filtro por status e exclusão com confirmação.
 - **Dashboard** com total, últimos 7 dias e distribuição por status.
 - **Exportação CSV** (separador `;`) de todos os leads.
 
@@ -48,6 +48,7 @@ O container, ao iniciar, executa automaticamente:
 | GET | `/api/auth/me` | Retorna o usuário autenticado. |
 | GET | `/api/leads` | Lista leads (`?busca=` e `?status=`). |
 | POST | `/api/leads` | Cadastra um lead. |
+| DELETE | `/api/leads/:id` | Exclui um lead. |
 | GET | `/api/leads/stats` | Estatísticas do dashboard. |
 | GET | `/api/leads/export` | Baixa o CSV dos leads. |
 

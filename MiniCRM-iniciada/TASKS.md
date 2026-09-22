@@ -13,6 +13,7 @@ Acompanhamento das tarefas do projeto. Cada tarefa aponta para o requisito em `R
 | T-07 | Revisão e entrega | — | 7 | concluída |
 | T-08 | Automação com skill | — | 8 | pendente |
 | T-09 | Máscara de telefone no cadastro | RF-02 | 3 | concluída |
+| T-10 | Exclusão de leads | RF-03 | 4 | concluída |
 
 ## Critérios de aceite por tarefa
 
@@ -36,3 +37,8 @@ Acompanhamento das tarefas do projeto. Cada tarefa aponta para o requisito em `R
 
 ### T-09 — Máscara de telefone no cadastro
 - [x] Campo de telefone formata a entrada como `(11) 99999-9999`.
+
+### T-10 — Exclusão de leads
+- [x] Coluna "Ações" na listagem com botão de ícone para excluir.
+- [x] Confirmação antes de excluir.
+- [x] `DELETE /api/leads/:id` remove o lead (204), com 404 para id inexistente e 400 para id inválido.

@@ -9,6 +9,8 @@ O formato segue o padrão [Keep a Changelog](https://keepachangelog.com/pt-BR/1.
 
 - Máscara de telefone no campo de cadastro de lead (`(11) 99999-9999`) e
   utilitário `formatarTelefone` com testes.
+- Exclusão de leads: coluna "Ações" na listagem com botão de ícone, confirmação
+  antes de excluir e rota `DELETE /api/leads/:id`.
 
 ## [0.2.0] - 2026-09-19
 
